@@ -36,7 +36,7 @@ char choosePlanet()
 //Calculates the results, takes weight and planet of choice from main
 void results(double weight, char planet)
 {
-	//gravitational constant
+	//earth's gravity
 	double gravConst{ 9.81 };
 
 	//Finds a match for what user inputted in planet input
