@@ -47,7 +47,7 @@ void results(double weight, char planet)
 	std::cout << std::setprecision(2);
 
 	//Finds a match for what user inputted in planet input
-	//Produces an error if match is not found
+	//Produces an error and closes if match is not found
 	switch (planet)
 	{
 	case 'a':
@@ -83,7 +83,7 @@ void results(double weight, char planet)
 		break;
 
 	case 'i':
-		std::cout << "\nPluto is not a planet! :(";
+		std::cout << "\nPluto is not a planet! :(\n";
 		break;
 
 	default:

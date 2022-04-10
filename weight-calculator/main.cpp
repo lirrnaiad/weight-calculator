@@ -23,8 +23,5 @@ int main()
 		}
 	}
 
-	std::cout << "Enter any key to exit.";
-	std::cin.get();
-	std::cin.get();
 	return 0;
 }
