@@ -1,4 +1,7 @@
 #include <iostream>
+#include <iomanip>
+#include <ios>
+#include <stdlib.h>
 #include "math.h"
 
 int main()
@@ -6,11 +9,19 @@ int main()
 	std::cout << "Weight on Other Planets Calculator\n\n";
 
 	double weight{ getWeight() };
-	char planet{ choosePlanet() };
-	results(weight, planet);
 
-	std::cin.get();
-	std::cin.get();
+	while(true) {
+		char planet{ choosePlanet() };
+		results(weight, planet);
+
+		std::cout << "Would you like to try a different planet? (y/n): ";
+		char answer{};
+		std::cin >> answer;
+		
+		if (answer != 'y' && answer != 'Y') {
+			break;
+		}
+	}
 
 	return 0;
 }
