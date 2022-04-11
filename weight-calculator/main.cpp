@@ -1,7 +1,3 @@
-#include <iostream>
-#include <iomanip>
-#include <ios>
-#include <stdlib.h>
 #include "math.h"
 
 int main()
@@ -10,14 +6,14 @@ int main()
 
 	double weight{ getWeight() };
 
-	while(true) {
+	while (true) {
 		char planet{ choosePlanet() };
 		results(weight, planet);
 
-		std::cout << "Would you like to try a different planet? (y/n): ";
+		std::cout << "\nWould you like to try a different planet? (y/n): ";
 		char answer{};
 		std::cin >> answer;
-		
+
 		if (answer != 'y' && answer != 'Y') {
 			break;
 		}
