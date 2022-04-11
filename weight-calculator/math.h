@@ -1,4 +1,9 @@
 #pragma once
+#include <iostream>
+#include <iomanip>
+#include <ios>
+#include <stdlib.h>
 
 double getWeight();
-int choosePlanet();
+char choosePlanet();
+void results(double weight, char planet);
